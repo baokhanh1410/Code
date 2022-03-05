@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanh Electronics</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="icon" href="../../assets/Logo.png" type="image/gif" sizes="16x16">
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div>
+        <!-- Shopping cart -->
+        <!-- <div class="cart-container">
+            <div class="cart-whitespace" onclick="shoppingCartClose()"></div>
+            <div class="shopping-cart">
+                <div class="shopping-cart__container">
+                    <div class="shopping-cart__container max-width">
+                        <div class="shopping-cart__header">
+                            <p>cart</p>
+                            <i class="fa-solid fa-xmark" onclick="shoppingCartClose()"></i>
+                        </div>
+                        <div class="shopping-cart__body">
+                            <ul class="shopping-cart__section--container">
+                            </ul>
+                        </div>
+                        <div class="shopping-cart__footer">
+                            <div class="shopping-cart__btn">
+                                <a href="#"> <button>view cart</button>
+                                </a>
+                                <a href="#"> <button>checkout</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- HTML Header -->
+        <header>
+            <div class="header__top">
+                <div class="max-width">
+                    <div class="header__top--section">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <p class="header--font">+84 397 042 804</p>
+                    </div>
+                    <div class="header__top--section">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <p class="header--font">khanh@electronics.com.vn</a>
+                    </div>
+                    <div class="header__top--section">
+                        <i class="fa-solid fa-user icon"></i>
+                        <p class="header--font">Account</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="max-width">
+                    <div class="header__bottom__top">
+                        <div class="header__bottom__top--left">
+                            <a href="../HTML/homepage.html"><img src="../../assets/Logo.png" alt=""></a>
+                        </div>
+                        <div class="header__bottom__top--middle">
+                            <form class="header--input-background" method="post" action="../html/products.html">
+                                <input type="text" placeholder="Search...">
+                                <button class="search-btn" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="header__bottom__top--right">
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                            <a href="#"> <i class="fa-solid fa-bag-shopping" onclick="shoppingCartOpen()"></i></a>
+                        </div>
+                    </div>
+                    <div class="header__bottom__bottom">
+                        <div class="max-width">
+                            <nav id="nav">
+                                <ul class="nav--container">
+                                    <li class="nav--item">
+                                        <div class="nav--section">
+                                            <p>Pages</p>
+                                            <i class="fa-solid fa-sort-down"></i>
+                                        </div>
+                                        <div class="nav--dropdown nav--dropdown--animated">
+                                            <ul class="nav--dropdown--section">
+                                                <div class="nav--dropdown--content">
+                                                    <p>Shop Page</p>
+                                                    <a href="#">
+                                                        <li>404 Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Product Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Cart Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Coming Soon</li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                            <ul class="nav--dropdown--section">
+                                                <div class="nav--dropdown--content">
+                                                    <p>Other Shop Page</p>
+                                                    <a href="#">
+                                                        <li>Cart Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Checkout Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Compare Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Whislist Page</li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                            <ul class="nav--dropdown--section">
+                                                <div class="nav--dropdown--content">
+                                                    <p>Shop Page</p>
+                                                    <a href="#">
+                                                        <li>Account Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Login & Register Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Empty Cart Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Thank You Page</li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                            <div class="nav--dropdown--section">
+                                                <img src="https://template.hasthemes.com/hmart/hmart/assets/images/banner/menu-banner.png"
+                                                    alt="">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav--item">
+                                        <div class="nav--section">
+                                            <a href="#">
+                                                <p>About</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav--item">
+                                        <div class="nav--section">
+                                            <p>Categories</p>
+                                            <i class="fa-solid fa-sort-down"></i>
+                                        </div>
+                                        <div class="nav--dropdown nav--dropdown--animated">
+                                            <ul class="nav--dropdown--section">
+                                                <div class="nav--dropdown--content">
+                                                    <p>Laptops & PCs</p>
+                                                    <a href="#">
+                                                        <li>All Laptops & PCs</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Laptops</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>PCs</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>High-end Laptops & PCs</li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                            <ul class="nav--dropdown--section">
+                                                <div class="nav--dropdown--content">
+                                                    <p>Phones & Tablets</p>
+                                                    <a href="#">
+                                                        <li>All Phones & Tablets</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Phones</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Tablets</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>High-end Phones & Tablets</li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                            <ul class="nav--dropdown--section">
+                                                <div class="nav--dropdown--content">
+                                                    <p>Monitors & Speakers</p>
+                                                    <a href="#">
+                                                        <li>All Monitors & Speakers</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Monitors</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Speakers</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>High-end Monitors & Speakers</li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                            <ul class="nav--dropdown--section">
+                                                <div class="nav--dropdown--content nav--dropdown--last-content">
+                                                    <p>Shop Page</p>
+                                                    <a href="#">
+                                                        <li>Account Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Login & Register Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Empty Cart Page</li>
+                                                    </a>
+                                                    <a href="#">
+                                                        <li>Thank You Page</li>
+                                                    </a>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav--item">
+                                        <div class="nav--section">
+                                            <a href="#">
+                                                <p>blog</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav--item">
+                                        <div class="nav--section">
+                                            <a href="">
+                                                <p>contact</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HTML Body -->
+        <section>
+            <div class="body__slider">
+                <div class="body__slider--picture">
+                    <img src="" alt="">
+                </div>
+                <div class="max-width">
+                    <div class="body__slider--align">
+                        <div class="max-width">
+                            <div class="body__slider--content">
+                                <div class="body__slider--text">
+                                    <p>welcome to Khanh Electronics</p>
+                                    <div class="body__slider--big-text">
+                                        <h1>your home</h1>
+                                        <h1>smart devices &</h1>
+                                        <h1>best solution</h1>
+                                    </div>
+                                </div>
+                                <div class="body__slider--btn">
+                                    <a href="../html/products.html">
+                                        <button>shop all device</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="body__slider--mini-picture">
+                                <img src="https://template.hasthemes.com/hmart/hmart/assets/images/hero/inner-img/hero-1-1.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__section">
+                <div class="max-width">
+                    <div class="body__big-section--container">
+                        <div class="body__big-section">
+                            <div class="body__section--block">
+                                <div class="body--banner">
+                                    <img src="../../assets/banner 1.png" alt="">
+                                </div>
+                                <div class="body__section--content">
+                                    <div class="body__section--text">
+                                        <h1>smart watch for your hand</h1>
+                                        <p>from $199.00</p>
+                                    </div>
+                                    <div class="body__section--btn">
+                                        <a href="#">
+                                            <button><i class="fa-solid fa-arrow-right"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body__small-section--container">
+                        <div class="body__small-section">
+                            <div class="body__section--block">
+                                <div class="body__section--content">
+                                    <div class="body__section--text">
+                                        <h1>headphones</h1>
+                                        <p>from $129.00</p>
+                                    </div>
+                                    <div class="body__section--btn">
+                                        <a href="#">
+                                            <button><i class="fa-solid fa-arrow-right"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="body--banner">
+                                    <img src="../../assets/banner 2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body__small-section">
+                            <div class="body__section--block">
+                                <div class="body__section--content">
+                                    <div class="body__section--text">
+                                        <h1>smartphones</h1>
+                                        <p>from $499.00</p>
+                                    </div>
+                                    <div class="body__section--btn">
+                                        <a href="#">
+                                            <button><i class="fa-solid fa-arrow-right"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="body--banner">
+                                    <img src="../../assets/banner 3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__products">
+                <div class="max-width">
+                    <ul class="body__products--item--container">
+                        <div class="body__products--item">
+                            <li class="body__products--li bodyActive">New Arrivals</li>
+                            <li class="body__products--li ">Featured</li>
+                        </div>
+                        <a class="body__products--item--text" href="#">
+                            <p>go to products page</p>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </ul>
+                    <div class=" body__products--container">
+                        <div class="body__products--row">
+                            <!-- <a class="body__products--box" href="#">
+                                <div class="body__products--max-width">
+                                    <span class="body__products--tag">
+                                        <div class="body__products--tag--style tag--new-arrival">123</div>
+                                        <div class="body__products--tag--style tag--discount">123</div>
+                                    </span>
+                                    <div class="body__products--picture">
+                                        <img class="body__products--picture-content" src="/assets/Apple/AirPodsMax.png"
+                                            alt="">
+                                    </div>
+                                    <div class="body__products--content">
+                                        <p class="body__products--categories">AIrpods max max max </p>
+                                        <p class="body__products--name">airpods  max 123 123</p>
+                                        <div class="body__products--price--container">
+                                            <p class="body__products--discount">150.00</p>
+                                            <p class="body__products--price--barrier">-</p>
+                                            <p class="body__products--price">129.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="body__products--hover hover--animated">
+                                        <div class="body__products--hover-section"><i class="fa-solid fa-bag-shopping"></i></div>
+                                        <div class="body__products--hover-section"><i class="fa-solid fa-heart"></i>
+                                        </div>
+                                        <div class="body__products--hover-section"><i class="fa-solid fa-eye"></i>
+                                        </div>
+                                        <div class="body__products--hover-section"><i
+                                                class="fa-solid fa-code-compare"></i></div>
+                                    </div>
+                                </div>
+                            </a> -->
+                            <div class="loading__container">
+                                <div class="loading"></div>
+                                <div class="loading--text">
+                                    <p>Loading Data</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__big--banner">
+                <div class="body__big--banner--content">
+                    <div class="body__big--banner--text">
+                        <p>smart fashion</p>
+                        <p>with smart devices</p>
+                    </div>
+                    <div class="body__big--banner--btn">
+                        <a href="../html/products.html">
+                            <button>
+                                <p>shop all devices</p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body__featured--section">
+                <div class="body__featured--container max-width">
+                    <div class="body__featured--title">
+                        <h1>featured offers</h1>
+                        <p>There are many discount events of Khanh electronics available </p>
+                    </div>
+                    <div class="body__featured--content--container">
+
+                        <div class="body__featured--big--container">
+                        </div>
+                        <div class="loading__container">
+                            <div class="loading"></div>
+                            <div class="loading--text">
+                                <p>Loading Data</p>
+                            </div>
+                        </div>
+                        <div class="body__featured--small--container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="body__brand--section">
+                <div class="body__brand--banner">
+                    <div class="body__brand--text">
+                        <p> save up to 30%</p>
+                        <p> Don't miss our weekend specials</p>
+                    </div>
+                </div>
+                <div class="max-width">
+                    <div class="body__brand--container">
+                        <div class="body__brand--title">
+                            Apple
+                        </div>
+                        <div class="owl-carousel owl-theme"></div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <!-- HTML Footer -->
+        <footer>
+            <div class="max-width">
+                <div class="footer__content">
+                    <div class="footer__left">
+                        <div class="footer__logo">
+                            <img src="/assets/Logo footer.png" alt="">
+                        </div>
+                        <ul class="footer__icon--container">
+                            <li><a href="https://www.facebook.com/khanh.1410k6">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a></li>
+                            <li><a href="https://www.youtube.com/channel/UCB6ofL0sVIOqq19mRePceYA">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a></li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/bao_khnh/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer--section">
+                        <div class="footer--title">
+                            <h1>Services</h1>
+                        </div>
+                        <ul class="footer--list">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Shopping Cart</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Services Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer--section">
+                        <div class="footer--title">
+                            <h1>Shop Page</h1>
+                        </div>
+                        <ul class="footer--list">
+                            <li><a href="#">Home Page</a></li>
+                            <li><a href="#">Products Page</a></li>
+                            <li><a href="#">Single Product Page</a></li>
+                            <li><a href="#">404 Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer--section">
+                        <div class="footer--title">
+                            <h1>Contact Info</h1>
+                        </div>
+                        <ul class="footer--list">
+                            <li><a href="#">Address: Ha Noi, Viet Nam</a></li>
+                            <li><a href="#">Phone: +84 397 042 804</a></li>
+                            <li><a href="#">Email: khanh@electronics.com.vn</a></li>
+                            <li><a href="#">khanh@electronics.com.vn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a class="body__products--box" href="">
+                    <div class="body__products--max-width">
+                        <span class="body__products--tag">
+                            <div class="body__products--tag--style tag--new-arrival"></div>
+                            <div class="body__products--tag--style tag--discount">
+                            </div>
+                        </span>
+                        <div class="body__products--picture">
+                            <img class="body__products--picture-content" src="/assets/Apple/AirPods2.png" alt="">
+                        </div>
+                        <div class="body__products--content">
+                            <p class="body__products--categories">Tablets</p>
+                            <p class="body__products--name">Apple IPad Mini</p>
+                            <p class="body__products--price">$399.00</p>
+                        </div>
+                        <div class="body__products--hover hover--animated">
+                            <div class="body__products--hover-section"><i class="fa-solid fa-bag-shopping"></i></div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-code-compare"></i></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a class="body__products--box" href="">
+                    <div class="body__products--max-width">
+                        <span class="body__products--tag">
+                            <div class="body__products--tag--style tag--new-arrival"></div>
+                            <div class="body__products--tag--style tag--discount">
+                            </div>
+                        </span>
+                        <div class="body__products--picture">
+                            <img class="body__products--picture-content" src="/assets/Apple/applewatchse.png" alt="">
+                        </div>
+                        <div class="body__products--content">
+                            <p class="body__products--categories">Tablets</p>
+                            <p class="body__products--name">Apple IPad Mini</p>
+                            <p class="body__products--price">$399.00</p>
+                        </div>
+                        <div class="body__products--hover hover--animated">
+                            <div class="body__products--hover-section"><i class="fa-solid fa-bag-shopping"></i></div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-code-compare"></i></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a class="body__products--box" href="">
+                    <div class="body__products--max-width">
+                        <span class="body__products--tag">
+                            <div class="body__products--tag--style tag--new-arrival"></div>
+                            <div class="body__products--tag--style tag--discount">
+                            </div>
+                        </span>
+                        <div class="body__products--picture">
+                            <img class="body__products--picture-content" src="/assets/Apple/iPadMini.png" alt="">
+                        </div>
+                        <div class="body__products--content">
+                            <p class="body__products--categories">Tablets</p>
+                            <p class="body__products--name">Apple IPad Mini</p>
+                            <p class="body__products--price">$399.00</p>
+                        </div>
+                        <div class="body__products--hover hover--animated">
+                            <div class="body__products--hover-section"><i class="fa-solid fa-bag-shopping"></i></div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="body__products--hover-section"><i class="fa-solid fa-code-compare"></i></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> -->
+    </div>
+    <!-- Link javascript -->
+    <script src="../js/general.js"></script>
+    <script src=" ../js/homepage.js"></script>
+</body>
+
+</html>
