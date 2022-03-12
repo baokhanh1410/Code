@@ -1,29 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  /* overflow-x: hidden; */
-}
-
-:root {
-  /* Color */
-  --blue-color: #266bf9;
-  --less-lighter-blue-color: #e2f2ff;
-  --light-blue-color: #f2f8fd;
-  --light-black-color: #252525;
-  --black-color: #000;
-  --light-gray-color: #e1e1e1;
-  --lighter-gray-color: #f2f2f2;
-  --dark-gray-color: #454545;
-  --darker-gray-color: #707070;
-  --footer-background-color: #5d5d5d;
-  /* Font color */
-  --font-color: #fff;
-  --gray-font-color: #999da0;
-  /* Transition */
-  --transition-all: all ease 0.3s;
-}
 
 /* CSS ScrollBar */
 

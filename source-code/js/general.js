@@ -11,6 +11,7 @@ searchForm.addEventListener("submit", (event) => {
     console.log(productValue)
     // searchArr.push(productValue)
 })
+// Get all localStorageItems 
 let getLocalStorageItems = () => {
 
     let keys = Object.keys(localStorage),
@@ -476,4 +477,6 @@ fetch("http://localhost:3000/products")
             }
             navChangeClass();
         }
+        localStorage.clear()
+
     })
