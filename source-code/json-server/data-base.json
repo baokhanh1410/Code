@@ -15,7 +15,9 @@
             "featured": "true",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleiphone13pro",
@@ -32,7 +34,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleiphone13",
@@ -49,7 +53,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleiphone13mini",
@@ -66,7 +72,9 @@
             "featured": "true",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleiphone12",
@@ -83,7 +91,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleiphone12mini",
@@ -100,7 +110,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleiphone11",
@@ -117,7 +129,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleairpods2",
@@ -134,7 +148,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleairpods3",
@@ -151,7 +167,9 @@
             "featured": "true",
             "discount": "true",
             "discount_content": "20%",
-            "discount_content_number": "80"
+            "discount_content_number": "80",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleairpodspro",
@@ -168,7 +186,9 @@
             "featured": "true",
             "discount": "true",
             "discount_content": "25%",
-            "discount_content_number": "75"
+            "discount_content_number": "75",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleairpodsmax",
@@ -185,7 +205,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleipadpro11wifi",
@@ -199,10 +221,12 @@
             "product_categories": "Phones & Tablets",
             "newArrivals": "true",
             "newArrivals_content": "new",
-            "featured": "true",
+            "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleipadpro12.9wifi",
@@ -216,10 +240,12 @@
             "product_categories": "Phones & Tablets",
             "newArrivals": "true",
             "newArrivals_content": "new",
-            "featured": "true",
+            "featured": "false",
             "discount": "true",
             "discount_content": "10%",
-            "discount_content_number": "90"
+            "discount_content_number": "90",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleipadair10.9wifi",
@@ -236,7 +262,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleipad10.2wifi",
@@ -253,7 +281,9 @@
             "featured": "true",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "appleipadmini8.3wifi",
@@ -270,7 +300,9 @@
             "featured": "true",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "phonestablets",
+            "brand_id": "apple"
         },
         {
             "id": "applemacbookair13",
@@ -287,7 +319,9 @@
             "featured": "true",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "laptopspcs",
+            "brand_id": "apple"
         },
         {
             "id": "applemacbookpro13",
@@ -304,7 +338,9 @@
             "featured": "true",
             "discount": "true",
             "discount_content": "20%",
-            "discount_content_number": "80"
+            "discount_content_number": "80",
+            "cat_id": "laptopspcs",
+            "brand_id": "apple"
         },
         {
             "id": "applemacbookpro14",
@@ -321,7 +357,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "laptopspcs",
+            "brand_id": "apple"
         },
         {
             "id": "applemacbookpro16",
@@ -338,7 +376,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "laptopspcs",
+            "brand_id": "apple"
         },
         {
             "id": "applewatchseries7",
@@ -355,7 +395,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "watches",
+            "brand_id": "apple"
         },
         {
             "id": "applewatchseries3",
@@ -372,7 +414,9 @@
             "featured": "true",
             "discount": "true",
             "discount_content": "20%",
-            "discount_content_number": "80"
+            "discount_content_number": "80",
+            "cat_id": "watches",
+            "brand_id": "apple"
         },
         {
             "id": "applewatchse",
@@ -389,7 +433,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "watches",
+            "brand_id": "apple"
         },
         {
             "id": "applewatchnike",
@@ -406,7 +452,9 @@
             "featured": "true",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": "100"
+            "discount_content_number": "100",
+            "cat_id": "watches",
+            "brand_id": "apple"
         },
         {
             "id": "applewatchhermes",
@@ -423,7 +471,9 @@
             "featured": "false",
             "discount": "true",
             "discount_content": "20%",
-            "discount_content_number": "80"
+            "discount_content_number": "80",
+            "cat_id": "watches",
+            "brand_id": "apple"
         },
         {
             "id": "samsunggalaxys22",
@@ -440,7 +490,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": ""
+            "discount_content_number": "",
+            "cat_id": "phonestablets",
+            "brand_id": "samsung"
         },
         {
             "id": "samsunggalaxys22ultra",
@@ -457,10 +509,12 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": ""
+            "discount_content_number": "",
+            "cat_id": "phonestablets",
+            "brand_id": "samsung"
         },
         {
-            "id": "samsunggalaxys22+",
+            "id": "samsunggalaxys22plus",
             "product_name": "Samsung Galaxy S22+ 128GB",
             "product_price": "1,139.00",
             "product_ram": "8GB",
@@ -474,7 +528,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": ""
+            "discount_content_number": "",
+            "cat_id": "phonestablets",
+            "brand_id": "samsung"
         },
         {
             "id": "speakerhwq60r",
@@ -491,7 +547,9 @@
             "featured": "false",
             "discount": "true",
             "discount_content": "30%",
-            "discount_content_number": "70"
+            "discount_content_number": "70",
+            "cat_id": "monitorsspeakers",
+            "brand_id": "samsung"
         },
         {
             "id": "speakerhwt420",
@@ -508,7 +566,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": ""
+            "discount_content_number": "",
+            "cat_id": "monitorsspeakers",
+            "brand_id": "samsung"
         },
         {
             "id": "speakerhwt550",
@@ -525,7 +585,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": ""
+            "discount_content_number": "",
+            "cat_id": "monitorsspeakers",
+            "brand_id": "samsung"
         },
         {
             "id": "samsunggalaxybookpro15",
@@ -543,7 +605,9 @@
             "featured": "true",
             "discount": "true",
             "discount_content": "25%",
-            "discount_content_number": "75"
+            "discount_content_number": "75",
+            "cat_id": "laptopspcs",
+            "brand_id": "samsung"
         },
         {
             "id": "gigabyteaorusfo48u",
@@ -551,7 +615,7 @@
             "product_price": "2,199.00",
             "product_ram": "None",
             "product_cpu": "None",
-            "product_monitor": "None",
+            "product_monitor": "48 inch UHD OLED 120Hz",
             "product_memory": "None",
             "product_picture": "../../assets/gigabyte/gigabyteaorusfo48u.png",
             "product_categories": "Monitors",
@@ -560,7 +624,9 @@
             "featured": "false",
             "discount": "true",
             "discount_content": "30%",
-            "discount_content_number": "70"
+            "discount_content_number": "70",
+            "cat_id": "monitorsspeakers",
+            "brand_id": "gigabyte"
         },
         {
             "id": "gigabyteaorusfi32q",
@@ -568,7 +634,7 @@
             "product_price": "959.00",
             "product_ram": "None",
             "product_cpu": "None",
-            "product_monitor": "None",
+            "product_monitor": "32 inch IPS 170Hz",
             "product_memory": "None",
             "product_picture": "../../assets/gigabyte/gigabyteaorusfi32q.png",
             "product_categories": "Monitors",
@@ -577,7 +643,9 @@
             "featured": "false",
             "discount": "false",
             "discount_content": "",
-            "discount_content_number": ""
+            "discount_content_number": "",
+            "cat_id": "monitorsspeakers",
+            "brand_id": "gigabyte"
         },
         {
             "id": "gigabytelaptopg5",
@@ -595,7 +663,9 @@
             "featured": "false",
             "discount": "true",
             "discount_content": "10%",
-            "discount_content_number": "90"
+            "discount_content_number": "90",
+            "cat_id": "laptopspcs",
+            "brand_id": "gigabyte"
         },
         {
             "id": "gigabyteaoruslaptop15p",
@@ -613,7 +683,143 @@
             "featured": "true",
             "discount": "true",
             "discount_content": "30%",
-            "discount_content_number": "70"
+            "discount_content_number": "70",
+            "cat_id": "laptopspcs",
+            "brand_id": "gigabyte"
+        }
+    ],
+    "descriptions": [
+        {
+            "id": "appleiphone13promax",
+            "description": "The iPhone 13 Pro Max display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.68 inches diagonally (actual viewable area is less)."
+        },
+        {
+            "id": "appleiphone13pro",
+            "description": "The iPhone 13 Pro display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less)."
+        },
+        {
+            "id": "appleiphone13",
+            "description": "The iPhone 13 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less)."
+        },
+        {
+            "id": "appleiphone13mini",
+            "description": "The iPhone 13 mini display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.42 inches diagonally (actual viewable area is less)."
+        },
+        {
+            "id": "appleiphone12",
+            "description": "The iPhone 12 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less)."
+        },
+        {
+            "id": "appleiphone12mini",
+            "description": "The iPhone 12 mini display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.42 inches diagonally (actual viewable area is less)."
+        },
+        {
+            "id": "appleiphone11",
+            "description": "The iPhone 11 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less)."
+        },
+        {
+            "id": "appleairpods2",
+            "description": "With plenty of talk and listen time and an available wireless charging case, AirPods deliver an incredible wireless headphone experience. Simply take them out and they’re ready to use with all your devices. Put them in your ears and they connect immediately, immersing you in rich, high-quality sound. Just like magic."
+        },
+        {
+            "id": "appleairpods3",
+            "description": "With plenty of talk and listen time and an available wireless charging case, AirPods deliver an incredible wireless headphone experience. Simply take them out and they’re ready to use with all your devices. Put them in your ears and they connect immediately, immersing you in rich, high-quality sound. Just like magic."
+        },
+        {
+            "id": "appleairpodspro",
+            "description": "With plenty of talk and listen time and an available wireless charging case, AirPods deliver an incredible wireless headphone experience. Simply take them out and they’re ready to use with all your devices. Put them in your ears and they connect immediately, immersing you in rich, high-quality sound. Just like magic."
+        },
+        {
+            "id": "appleairpodsmax",
+            "description": "With plenty of talk and listen time and an available wireless charging case, AirPods deliver an incredible wireless headphone experience. Simply take them out and they’re ready to use with all your devices. Put them in your ears and they connect immediately, immersing you in rich, high-quality sound. Just like magic."
+        },
+        {
+            "id": "appleipadpro11wifi",
+            "description": "Powerful. Easy to use. Versatile. The new iPad is designed for all the things you love to do. Work, play, create, learn, stay connected, and more. All at an incredible value."
+        },
+        {
+            "id": "appleipadpro12.9wifi",
+            "description": "Powerful. Easy to use. Versatile. The new iPad is designed for all the things you love to do. Work, play, create, learn, stay connected, and more. All at an incredible value."
+        },
+        {
+            "id": "appleipadair10.9wifi",
+            "description": "Powerful. Easy to use. Versatile. The new iPad is designed for all the things you love to do. Work, play, create, learn, stay connected, and more. All at an incredible value."
+        },
+        {
+            "id": "appleipad10.2wifi",
+            "description": "Powerful. Easy to use. Versatile. The new iPad is designed for all the things you love to do. Work, play, create, learn, stay connected, and more. All at an incredible value."
+        },
+        {
+            "id": "appleipadmini8.3wifi",
+            "description": "Powerful. Easy to use. Versatile. The new iPad is designed for all the things you love to do. Work, play, create, learn, stay connected, and more. All at an incredible value."
+        },
+        {
+            "id": "applemacbookair13",
+            "description": "Our thinnest, lightest notebook, completely transformed by the Apple M1 chip. CPU speeds up to 3.5x faster. GPU speeds up to 5x faster. Our most advanced Neural Engine for up to 9x faster machine learning. The longest battery life ever in a MacBook Air. And a silent, fanless design. This much power has never been this ready to go."
+        },
+        {
+            "id": "applemacbookpro13",
+            "description": "The Apple M1 chip gives the 13-inch MacBook Pro speed and power beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life so you can go all day. It’s our most popular pro notebook, taken to a whole new level."
+        },
+        {
+            "id": "applemacbookpro14",
+            "description": "The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip — the first Apple silicon designed for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need. The first notebook of its kind, this MacBook Pro is a beast."
+        },
+        {
+            "id": "applemacbookpro16",
+            "description": "The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip — the first Apple silicon designed for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need. The first notebook of its kind, this MacBook Pro is a beast."
+        },
+        {
+            "id": "applewatchseries7",
+            "description": "A wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email"
+        },
+        {
+            "id": "applewatchseries3",
+            "description": "A wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email"
+        },
+        {
+            "id": "applewatchse",
+            "description": "A wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email"
+        },
+        {
+            "id": "applewatchnike",
+            "description": "A wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email"
+        },
+        {
+            "id": "applewatchhermes",
+            "description": "A wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email"
+        }
+    ],
+    "categories": [
+        {
+            "cat_id": "latopspcs",
+            "cat_name": "Laptops & PCs"
+        },
+        {
+            "cat_id": "phonestablets",
+            "cat_name": "Phones & Tablets"
+        },
+        {
+            "cat_id": "monitorsspeakers",
+            "cat_name": "Monitors & Speakers"
+        },
+        {
+            "cat_id": "watches",
+            "cat_name": "Watches"
+        }
+    ],
+    "brands": [
+        {
+            "brand_id": "apple",
+            "brand_name": "Apple"
+        },
+        {
+            "brand_id": "samsung",
+            "brand_name": "Samsung"
+        },
+        {
+            "brand_id": "gigabyte",
+            "brand_name": "Gigabyte"
         }
     ]
 }

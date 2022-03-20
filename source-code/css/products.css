@@ -1,4 +1,3 @@
-
 /* CSS ScrollBar */
 
 ::-webkit-scrollbar {
@@ -804,6 +803,12 @@ nav {
 }
 
 /* Body Products */
+.empty__container{
+  display: none;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
 .body__content--bottom {
   position: relative;
   display: flex;
@@ -959,7 +964,7 @@ nav {
 }
 
 .body__content--pageContainer {
-  margin-top: 50px;
+  margin: 50px 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -992,7 +997,7 @@ nav {
 }
 
 .body__content--rowContainer {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
 }

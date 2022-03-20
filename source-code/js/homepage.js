@@ -1,20 +1,4 @@
-// Sticky nav bar
-{
-  let navbar = document.querySelector(".header__bottom__bottom");
-  let sticky = navbar.offsetTop;
-  let stickyNavbar = () => {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("nav--sticky");
-    } else {
-      navbar.classList.remove("nav--sticky");
-    }
-  };
-  window.onscroll = () => {
-    stickyNavbar();
-  };
-}
-// Call API
-fetch("http://localhost:3000/products")
+fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
   .then((response) => response.json())
   // b1: parse dữ liệu từ json -> js data type (database)
   // return dữ liệu Promise, trong promise đó thì nó đã resolve cái database
@@ -113,6 +97,18 @@ fetch("http://localhost:3000/products")
                                 </a>`;
         }
       }
+      // Move to Single Product
+      let allBodyProducts = document.querySelectorAll('.body__products--box')
+        , allBodyProductsLength = allBodyProducts.length
+        , allBodyProductsName = document.querySelectorAll('.body__products--name')
+      for (let i in productsArr) {
+        for (let j = 0; j < allBodyProductsLength; j++) {
+          // if(allBodyProductsName[j])
+          if (allBodyProductsName[j].innerText === productsArr[i].product_name) {
+            allBodyProducts[j].href = `../html/product-detail.html?id=${productsArr[i].id}`
+          }
+        }
+      }
     };
     bodyNewArrivalsProducts();
     let bodyFeaturedProducts = () => {
@@ -159,6 +155,18 @@ fetch("http://localhost:3000/products")
                                 </div>
                             </a>`;
         }
+      };
+      // Move to Single Product
+      let allBodyProducts = document.querySelectorAll('.body__products--box')
+        , allBodyProductsLength = allBodyProducts.length
+        , allBodyProductsName = document.querySelectorAll('.body__products--name')
+      for (let i in productsArr) {
+        for (let j = 0; j < allBodyProductsLength; j++) {
+          // if(allBodyProductsName[j])
+          if (allBodyProductsName[j].innerText === productsArr[i].product_name) {
+            allBodyProducts[j].href = `../html/product-detail.html?${productsArr[i].id}`
+          }
+        }
       }
     };
     // Body Change Class Active
@@ -188,12 +196,8 @@ fetch("http://localhost:3000/products")
     bodyProductsChangeClass();
     // Featured products
     let discountProductsArr = [],
-      bodyFeaturedSmallSectionContainer = document.querySelector(
-        ".body__featured--small--container"
-      ),
-      bodyFeaturedBigSectionContainer = document.querySelector(
-        ".body__featured--big--container"
-      );
+      bodyFeaturedSmallSectionContainer = document.querySelector(".body__featured--small--container"),
+      bodyFeaturedBigSectionContainer = document.querySelector(".body__featured--big--container");
     for (let i in productsArr) {
       // let discountProductsPrice = Number(productsArr[i].product_price.replaceAll(',', '')) / 100 * Number(productsArr[i].discount_content_number)
       if (productsArr[i].discount === "true") {
@@ -207,32 +211,16 @@ fetch("http://localhost:3000/products")
     bodyFeaturedBigSectionContainer.innerHTML = `
                             <div class="body__featured--big-section" >
                                 <div class="body__featured--text">
-                                    <h2>${discountProductsArr[0].product_name
-      }</h2>
+                                    <h2>${discountProductsArr[0].product_name}</h2>
                                     <div class="body__featured--price--container">
-                                        <div class="body__featured--discount body__featured--big--section--font">$${discountProductsArr[0].product_price
-      }
-                                        </div>
+                                        <div class="body__featured--discount body__featured--big--section--font">$${discountProductsArr[0].product_price}</div>
                                         <div class="body__featured--barrier body__featured--big--section--font">-</div>
-                                        <div class="body__featured--price body__featured--big--section--font">$${Number(
-        (Number(
-          discountProductsArr[0].product_price.replaceAll(
-            ",",
-            ""
-          )
-        ) /
-          100) *
-        Number(
-          discountProductsArr[0]
-            .discount_content_number
-        )
-      ).toFixed()}.00
+                                        <div class="body__featured--price body__featured--big--section--font">$${Number((Number(discountProductsArr[0].product_price.replaceAll(",", "")) / 100) * Number(discountProductsArr[0].discount_content_number)).toFixed()}.00
                                         </div>
                                     </div>
                                 </div>
                                 <div class="body__featured--picture">
-                                    <img src="${discountProductsArr[0].product_picture
-      }" alt="">
+                                    <img src="${discountProductsArr[0].product_picture}" alt="">
                                 </div>
                                 <div class="body__featured--content">
                                     <div class="body__featured--sale">
@@ -295,18 +283,7 @@ fetch("http://localhost:3000/products")
                             $${discountProductsArr[1].product_price}</div>
                         <div class="body__featured--barrier body__featured--small--section--font">-</div>
                         <div class="body__featured--price body__featured--small--section--font">
-                        $${Number(
-        (Number(
-          discountProductsArr[1].product_price.replaceAll(
-            ",",
-            ""
-          )
-        ) /
-          100) *
-        Number(
-          discountProductsArr[1].discount_content_number
-        )
-      ).toFixed()}.00</div>
+                        $${Number((Number(discountProductsArr[1].product_price.replaceAll(",", "")) / 100) * Number(discountProductsArr[1].discount_content_number)).toFixed()}.00</div>
                     </div>
                 </div>
                 <div class="body__featured--small--bottom">
@@ -392,4 +369,268 @@ fetch("http://localhost:3000/products")
             </div>
         </div>
  `;
-  });
+    // Render Products Apple
+    let bodyAppleSwiper = document.querySelector('#apple .swiper-wrapper');
+    for (let i in productsArr) {
+      if (productsArr[i].brand_id === 'apple') {
+        let discountPrice = ((Number(productsArr[i].product_price.replaceAll(",", "")) / 100) * Number(productsArr[i].discount_content_number)).toFixed();
+        let discountPriceComma = () => {
+          if (discountPrice > 999) {
+            discountPrice = String(discountPrice).slice(0, 1) + "," + String(discountPrice).slice(1);
+          }
+        };
+        discountPriceComma()
+        if (productsArr[i].discount === 'false') {
+          bodyAppleSwiper.innerHTML += `
+          <div class="swiper-slide">
+                                <div class="swiper--box">
+                                    <div class="swiper--maxWidth">
+                                        <span class="body__products--tag">
+                                            <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
+                                            <div class="body__products--tag--style tag--discount">${productsArr[i].discount_content}</div>
+                                        </span>
+                                        <div class="swiper--picture">
+                                            <img src="../../assets/Apple/${productsArr[i].product_picture}" alt="">
+                                        </div>
+                                        <div class="swiper--information">
+                                            <div class="swiper--categories">${productsArr[i].product_categories}</div>
+                                            <div class="swiper--name">${productsArr[i].product_name}</div>
+                                            <div class="swiper--priceContainer">
+                                                <div class="swiper--salePrice">$${productsArr[i].product_price}</div>
+                                            </div>
+                                            <div class="body__products--hover hover--animated">
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-bag-shopping"></i></div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-eye"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-code-compare"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+          `
+        } else if (productsArr[i].discount === 'true') {
+          bodyAppleSwiper.innerHTML += `
+          <div class="swiper-slide">
+                                <div class="swiper--box">
+                                    <div class="swiper--maxWidth">
+                                        <span class="body__products--tag">
+                                            <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
+                                            <div class="body__products--tag--style tag--discount">${productsArr[i].discount_content}</div>
+                                        </span>
+                                        <div class="swiper--picture">
+                                            <img src="../../assets/Apple/${productsArr[i].product_picture}" alt="">
+                                        </div>
+                                        <div class="swiper--information">
+                                            <div class="swiper--categories">${productsArr[i].product_categories}</div>
+                                            <div class="swiper--name">${productsArr[i].product_name}</div>
+                                            <div class="swiper--priceContainer">
+                                                <div class="swiper--saleDiscount">$${productsArr[i].product_price}</div>
+                                                <div class="swiper--barrier">-</div>
+                                                <div class="swiper--salePrice">$${discountPrice}.00</div>
+                                            </div>
+                                            <div class="body__products--hover hover--animated">
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-bag-shopping"></i></div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-eye"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-code-compare"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+          `
+        }
+      }
+    }
+    // Render Products Samsung
+    let bodySamsungSwiper = document.querySelector('#samsung .swiper-wrapper');
+    for (let i in productsArr) {
+      if (productsArr[i].brand_id === 'samsung') {
+        let discountPrice = ((Number(productsArr[i].product_price.replaceAll(",", "")) / 100) * Number(productsArr[i].discount_content_number)).toFixed();
+        let discountPriceComma = () => {
+          if (discountPrice > 999) {
+            discountPrice = String(discountPrice).slice(0, 1) + "," + String(discountPrice).slice(1);
+          }
+        };
+        discountPriceComma()
+        if (productsArr[i].discount === 'false') {
+          bodySamsungSwiper.innerHTML += `
+          <div class="swiper-slide">
+                                <div class="swiper--box">
+                                    <div class="swiper--maxWidth">
+                                        <span class="body__products--tag">
+                                            <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
+                                            <div class="body__products--tag--style tag--discount">${productsArr[i].discount_content}</div>
+                                        </span>
+                                        <div class="swiper--picture">
+                                            <img src="../../assets/Apple/${productsArr[i].product_picture}" alt="">
+                                        </div>
+                                        <div class="swiper--information">
+                                            <div class="swiper--categories">${productsArr[i].product_categories}</div>
+                                            <div class="swiper--name">${productsArr[i].product_name}</div>
+                                            <div class="swiper--priceContainer">
+                                                <div class="swiper--salePrice">$${productsArr[i].product_price}</div>
+                                            </div>
+                                            <div class="body__products--hover hover--animated">
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-bag-shopping"></i></div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-eye"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-code-compare"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+          `
+        } else if (productsArr[i].discount === 'true') {
+          bodySamsungSwiper.innerHTML += `
+          <div class="swiper-slide">
+                                <div class="swiper--box">
+                                    <div class="swiper--maxWidth">
+                                        <span class="body__products--tag">
+                                            <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
+                                            <div class="body__products--tag--style tag--discount">${productsArr[i].discount_content}</div>
+                                        </span>
+                                        <div class="swiper--picture">
+                                            <img src="../../assets/Apple/${productsArr[i].product_picture}" alt="">
+                                        </div>
+                                        <div class="swiper--information">
+                                            <div class="swiper--categories">${productsArr[i].product_categories}</div>
+                                            <div class="swiper--name">${productsArr[i].product_name}</div>
+                                            <div class="swiper--priceContainer">
+                                                <div class="swiper--saleDiscount">$${productsArr[i].product_price}</div>
+                                                <div class="swiper--barrier">-</div>
+                                                <div class="swiper--salePrice">$${discountPrice}.00</div>
+                                            </div>
+                                            <div class="body__products--hover hover--animated">
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-bag-shopping"></i></div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-eye"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-code-compare"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+          `
+        }
+      }
+    }
+    // Render Products Gigabyte
+    let bodyGigabyteSwiper = document.querySelector('#gigabyte .swiper-wrapper');
+    for (let i in productsArr) {
+      if (productsArr[i].brand_id === 'gigabyte') {
+        let discountPrice = ((Number(productsArr[i].product_price.replaceAll(",", "")) / 100) * Number(productsArr[i].discount_content_number)).toFixed();
+        let discountPriceComma = () => {
+          if (discountPrice > 999) {
+            discountPrice = String(discountPrice).slice(0, 1) + "," + String(discountPrice).slice(1);
+          }
+        };
+        discountPriceComma()
+        if (productsArr[i].discount === 'false') {
+          bodyGigabyteSwiper.innerHTML += `
+          <div class="swiper-slide">
+                                <div class="swiper--box">
+                                    <div class="swiper--maxWidth">
+                                        <span class="body__products--tag">
+                                            <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
+                                            <div class="body__products--tag--style tag--discount">${productsArr[i].discount_content}</div>
+                                        </span>
+                                        <div class="swiper--picture">
+                                            <img src="../../assets/Apple/${productsArr[i].product_picture}" alt="">
+                                        </div>
+                                        <div class="swiper--information">
+                                            <div class="swiper--categories">${productsArr[i].product_categories}</div>
+                                            <div class="swiper--name">${productsArr[i].product_name}</div>
+                                            <div class="swiper--priceContainer">
+                                                <div class="swiper--salePrice">$${productsArr[i].product_price}</div>
+                                            </div>
+                                            <div class="body__products--hover hover--animated">
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-bag-shopping"></i></div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-eye"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-code-compare"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+          `
+        } else if (productsArr[i].discount === 'true') {
+          bodyGigabyteSwiper.innerHTML += `
+          <div class="swiper-slide">
+                                <div class="swiper--box">
+                                    <div class="swiper--maxWidth">
+                                        <span class="body__products--tag">
+                                            <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
+                                            <div class="body__products--tag--style tag--discount">${productsArr[i].discount_content}</div>
+                                        </span>
+                                        <div class="swiper--picture">
+                                            <img src="../../assets/Apple/${productsArr[i].product_picture}" alt="">
+                                        </div>
+                                        <div class="swiper--information">
+                                            <div class="swiper--categories">${productsArr[i].product_categories}</div>
+                                            <div class="swiper--name">${productsArr[i].product_name}</div>
+                                            <div class="swiper--priceContainer">
+                                                <div class="swiper--saleDiscount">$${productsArr[i].product_price}</div>
+                                                <div class="swiper--barrier">-</div>
+                                                <div class="swiper--salePrice">$${discountPrice}.00</div>
+                                            </div>
+                                            <div class="body__products--hover hover--animated">
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-bag-shopping"></i></div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-eye"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-code-compare"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+          `
+        }
+      }
+    }
+  }); 

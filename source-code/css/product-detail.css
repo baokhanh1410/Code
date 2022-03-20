@@ -720,8 +720,22 @@ nav {
 .body__information--name {
     font-size: 32px;
 }
-.body__information--price {
+
+.body__information--priceContainer {
+    display: flex;
+    flex-direction: row;
     font-size: 32px;
+}
+.body__information--discount {
+    color: var(--gray-font-color);
+    text-decoration: line-through;
+}
+.body__information--barrier {
+    color: var(--gray-font-color);
+    margin: 0px 5px;
+}
+
+.body__information--price {
     font-weight: bold;
 }
 
@@ -934,7 +948,7 @@ nav {
     font-size: 17px;
 }
 
-.body__information--navRate{
+.body__information--navRate {
     position: relative;
     display: none;
 }

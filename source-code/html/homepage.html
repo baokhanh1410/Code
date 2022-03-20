@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Link Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body id="body">
@@ -217,18 +219,18 @@
                                             </ul>
                                             <ul class="nav--dropdown--section">
                                                 <div class="nav--dropdown--content nav--dropdown--last-content">
-                                                    <p>Shop Page</p>
+                                                    <p>Others</p>
                                                     <a href="#">
-                                                        <li>Account Page</li>
+                                                        <li>Watches</li>
                                                     </a>
                                                     <a href="#">
-                                                        <li>Login & Register Page</li>
+                                                        <li>Headphones</li>
                                                     </a>
                                                     <a href="#">
-                                                        <li>Empty Cart Page</li>
+                                                        <li>Microphones</li>
                                                     </a>
                                                     <a href="#">
-                                                        <li>Thank You Page</li>
+                                                        <li>Others</li>
                                                     </a>
                                                 </div>
                                             </ul>
@@ -403,6 +405,98 @@
                     </div>
                 </div>
             </div>
+            <div class="body__box">
+                <div class="max-width">
+                    <div class="body__boxSection">
+                        <div class="body__box--picture"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div class="body__box--textContainer">
+                            <h1>Free Delivery</h1>
+                            <p>Capped at $39 per order</p>
+                        </div>
+                    </div>
+                    <div class="body__boxSection">
+                        <div class="body__box--picture"><i class="fa-brands fa-cc-visa"></i></div>
+                        <div class="body__box--textContainer">
+                            <h1>Card Payments</h1>
+                            <p>12 Months Installments</p>
+                        </div>
+                    </div>
+                    <div class="body__boxSection">
+                        <div class="body__box--picture"><i class="fa-solid fa-box-archive"></i></div>
+                        <div class="body__box--textContainer">
+                            <h1>Easy Returns</h1>
+                            <p>Shop With Confidence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__swiper" id="apple">
+                <div class="max-width">
+                    <div class="swiper--title">
+                        Apple
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__swiper" id="samsung">
+                <div class="max-width">
+                    <div class="swiper--title">
+                        Samsung
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__swiper" id="gigabyte">
+                <div class="max-width">
+                    <div class="swiper--title">
+                        Gigabyte
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- <div class="swiper-slide">
+                                <div class="swiper--box">
+                                    <div class="swiper--maxWidth">
+                                        <span class="body__products--tag">
+                                            <div class="body__products--tag--style tag--new-arrival">NEW</div>
+                                            <div class="body__products--tag--style tag--discount">40%</div>
+                                        </span>
+                                        <div class="swiper--picture">
+                                            <img src="../../assets/Apple/AirPodsPro.png" alt="">
+                                        </div>
+                                        <div class="swiper--information">
+                                            <div class="swiper--categories">Headphones</div>
+                                            <div class="swiper--name">Apple Airpods 2nd Generation</div>
+                                            <div class="swiper--priceContainer">
+                                                <div class="swiper--saleDiscount">$299.00</div>
+                                                <div class="swiper--barrier">-</div>
+                                                <div class="swiper--salePrice">$199.00</div>
+                                            </div>
+                                            <div class="body__products--hover hover--animated">
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-bag-shopping"></i></div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-eye"></i>
+                                                </div>
+                                                <div class="body__products--hover-section"><i
+                                                        class="fa-solid fa-code-compare"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="body__big--banner">
                 <div class="body__big--banner--content">
                     <div class="body__big--banner--text">
@@ -439,22 +533,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="body__brand--section">
-                <div class="body__brand--banner">
-                    <div class="body__brand--text">
-                        <p> save up to 30%</p>
-                        <p> Don't miss our weekend specials</p>
-                    </div>
-                </div>
-                <div class="max-width">
-                    <div class="body__brand--container">
-                        <div class="body__brand--title">
-                            Apple
-                        </div>
-                        <div class="owl-carousel owl-theme"></div>
-                    </div>
-                </div>
-            </div> -->
         </section>
         <!-- HTML Footer -->
         <footer>
@@ -518,93 +596,22 @@
                 </div>
             </div>
         </footer>
-        <!-- <div class="owl-carousel owl-theme">
-            <div class="item">
-                <a class="body__products--box" href="">
-                    <div class="body__products--max-width">
-                        <span class="body__products--tag">
-                            <div class="body__products--tag--style tag--new-arrival"></div>
-                            <div class="body__products--tag--style tag--discount">
-                            </div>
-                        </span>
-                        <div class="body__products--picture">
-                            <img class="body__products--picture-content" src="/assets/Apple/AirPods2.png" alt="">
-                        </div>
-                        <div class="body__products--content">
-                            <p class="body__products--categories">Tablets</p>
-                            <p class="body__products--name">Apple IPad Mini</p>
-                            <p class="body__products--price">$399.00</p>
-                        </div>
-                        <div class="body__products--hover hover--animated">
-                            <div class="body__products--hover-section"><i class="fa-solid fa-bag-shopping"></i></div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-heart"></i>
-                            </div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-eye"></i>
-                            </div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-code-compare"></i></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a class="body__products--box" href="">
-                    <div class="body__products--max-width">
-                        <span class="body__products--tag">
-                            <div class="body__products--tag--style tag--new-arrival"></div>
-                            <div class="body__products--tag--style tag--discount">
-                            </div>
-                        </span>
-                        <div class="body__products--picture">
-                            <img class="body__products--picture-content" src="/assets/Apple/applewatchse.png" alt="">
-                        </div>
-                        <div class="body__products--content">
-                            <p class="body__products--categories">Tablets</p>
-                            <p class="body__products--name">Apple IPad Mini</p>
-                            <p class="body__products--price">$399.00</p>
-                        </div>
-                        <div class="body__products--hover hover--animated">
-                            <div class="body__products--hover-section"><i class="fa-solid fa-bag-shopping"></i></div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-heart"></i>
-                            </div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-eye"></i>
-                            </div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-code-compare"></i></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a class="body__products--box" href="">
-                    <div class="body__products--max-width">
-                        <span class="body__products--tag">
-                            <div class="body__products--tag--style tag--new-arrival"></div>
-                            <div class="body__products--tag--style tag--discount">
-                            </div>
-                        </span>
-                        <div class="body__products--picture">
-                            <img class="body__products--picture-content" src="/assets/Apple/iPadMini.png" alt="">
-                        </div>
-                        <div class="body__products--content">
-                            <p class="body__products--categories">Tablets</p>
-                            <p class="body__products--name">Apple IPad Mini</p>
-                            <p class="body__products--price">$399.00</p>
-                        </div>
-                        <div class="body__products--hover hover--animated">
-                            <div class="body__products--hover-section"><i class="fa-solid fa-bag-shopping"></i></div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-heart"></i>
-                            </div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-eye"></i>
-                            </div>
-                            <div class="body__products--hover-section"><i class="fa-solid fa-code-compare"></i></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div> -->
     </div>
     <!-- Link javascript -->
     <script src="../js/general.js"></script>
     <script src=" ../js/homepage.js"></script>
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
