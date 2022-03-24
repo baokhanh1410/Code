@@ -166,5 +166,5 @@ let shoppingCartClose = () => {
 // Cart Btn
 let cartBtn = document.querySelector('.body__information--cartBtn');
 cartBtn.addEventListener('click',()=>{
-            
+ console.log(true)
 })
