@@ -384,7 +384,7 @@
             "id": "applewatchseries7",
             "product_name": "Apple Watch Series 7 Leather Link",
             "product_price": "399.00",
-            "product_ram": "",
+            "product_ram": "None",
             "product_cpu": "S7 SiP",
             "product_monitor": "41mm",
             "product_memory": "32GB",
@@ -422,7 +422,7 @@
             "id": "applewatchse",
             "product_name": "Apple Watch SE Solo Loop",
             "product_price": "279.00",
-            "product_ram": "",
+            "product_ram": "None",
             "product_cpu": "S5 SiP",
             "product_monitor": "40mm",
             "product_memory": "32GB",
@@ -441,7 +441,7 @@
             "id": "applewatchnike",
             "product_name": "Apple Watch Nike Nike Sport Band",
             "product_price": "399.00",
-            "product_ram": "",
+            "product_ram": "None",
             "product_cpu": "S7 SiP",
             "product_monitor": "41mm",
             "product_memory": "32GB",
@@ -460,7 +460,7 @@
             "id": "applewatchhermes",
             "product_name": "Apple Watch Hermès Gourmette Double Tour",
             "product_price": "1,229.00",
-            "product_ram": "",
+            "product_ram": "None",
             "product_cpu": "S7 SiP",
             "product_monitor": "41mm",
             "product_memory": "32GB",
@@ -788,24 +788,89 @@
         {
             "id": "applewatchhermes",
             "description": "A wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email"
+        },
+        {
+            "id": "samsunggalaxys22",
+            "description": "Samsung Galaxy S22 launched with an extremely sophisticated and youthful appearance, bringing with it a flat design following the trend, a smooth 120 Hz screen, a 50 MP AI camera cluster and a processor from Qualcomm."
+        },
+        {
+            "id": "samsunggalaxys22ultra",
+            "description": "Galaxy S22 Ultra 5G is the most advanced smartphone in the Galaxy S22 series 3 that Samsung has launched. Integrating the perfect S Pen in the body, equipped with a powerful processor for extremely smooth usage tasks and more prominent with a unique bezel-less camera cluster with its own signature."
+        },
+        {
+            "id": "samsunggalaxys22plus",
+            "description": "Enjoying Samsung's leading technologies, Galaxy S22 Plus 5G will give you the ultimate experience from trendy design, powerful performance Snapdragon 8 Gen 1 and the most professional night camera system ever."
+        },
+        {
+            "id": "speakerhwq60r",
+            "description": "The Samsung 5.1 HW-Q60R soundbar has a neat, luxurious design, elegant black tones, bringing a minimalist and modern style to the room it is arranged."
+        },
+        {
+            "id": "speakerhwt420",
+            "description": "The SAMSUNG HW-T420 soundbar with a black cube design with right angles creates sophistication and elegance for your room."
+        },
+        {
+            "id": "speakerhwt550",
+            "description": "The Samsung HW-T550 soundbar has a luxurious black color with delicate angular lines, outstanding appearance suitable for many different spaces. The modern style makes a statement that, even when inactive, remains an elegant decoration for your guests."
+        },
+        {
+            "id": "samsunggalaxybookpro15",
+            "description": "Samsung Galaxy Book Pro i5 is a new high-end laptop product line from the cult brand Samsung - Samsung Galaxy Book. This laptop model, office laptop owns a modern design, strong configuration, super sharp screen. Not only that, this is also one of the lightest laptop models, maximum maneuverability for you to easily carry."
+        },
+        {
+            "id": "gigabyteaorusfo48u",
+            "description": "The GIGABYTE AORUS FO48U Monitor delivers true-to-life colors and perfect black representation. It requires no backlight and thus reduces response time and at the same time provides colors with perfect saturation and contrast."
+        },
+        {
+            "id": "gigabyteaorusfi32q",
+            "description": "The gaming-grade AORUS FI32Q IPS 2K 165Hz HDR monitor gives you smooth, variable refresh rate (VRR) gameplay, eliminating screen tearing, stuttering, flickering, or other phenomena to ensure ensure you have a competitive advantage."
+        },
+        {
+            "id": "gigabytelaptopg5",
+            "description": "The laptop is equipped with the 11th generation Intel Core i chip on Turbo Boost technology for a 20% increase in performance compared to previous generations, not only good for gaming, but it also offers outstanding power for fast processing of components. Office software on Word, Excel, PowerPoint, ... or poster design, image editing, video rendering, ... smooth."
+        },
+        {
+            "id": "gigabyteaoruslaptop15p",
+            "description": "The Gigabyte AORUS 15P laptop has a neat design with a mysterious black tone, the cut lines make it easy to use. The hinge of the machine is made quite firmly to help the machine less shake when used, you can completely open it with one hand by the smoothness between the joints."
         }
     ],
     "categories": [
         {
-            "cat_id": "latopspcs",
-            "cat_name": "Laptops & PCs"
+            "cat_id": "laptopspcs",
+            "cat_name": "Laptops & PCs",
+            "cat_list": [
+                "Laptops & PCs",
+                "Laptops",
+                "PCs",
+                "High-end Laptops & PCs"
+            ]
         },
         {
             "cat_id": "phonestablets",
-            "cat_name": "Phones & Tablets"
+            "cat_name": "Phones & Tablets",
+            "cat_list": [
+                "Phones  & Tablets",
+                "Phones",
+                "Tablets",
+                "High-end Phones & Tablets"
+            ]
         },
         {
             "cat_id": "monitorsspeakers",
-            "cat_name": "Monitors & Speakers"
+            "cat_name": "Monitors & Speakers",
+            "cat_list": [
+                "Monitors & Speakers",
+                "Monitors",
+                "Speakers",
+                "High-end Monitors & Speakers"
+            ]
         },
         {
             "cat_id": "watches",
-            "cat_name": "Watches"
+            "cat_name": "Watches",
+            "cat_list": [
+                "Watches"
+            ]
         }
     ],
     "brands": [

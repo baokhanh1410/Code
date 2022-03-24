@@ -39,13 +39,13 @@ for (param of productUrl) {
     productParam = param[1];
 };
 // Call Api
-let productApi = fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
+let productApi = fetch("http://localhost:3000/products")
     .then(response => response.json())
-let categoryApi = fetch('https://622ee3905c86fd315eb74758.mockapi.io/categories')
+let categoryApi = fetch('http://localhost:3000/categories')
     .then(response => response.json())
-let brandApi = fetch('https://622ee3905c86fd315eb74758.mockapi.io/brands')
+let brandApi = fetch('http://localhost:3000/brands')
     .then(response => response.json())
-let descriptionApi = fetch('https://622ee3905c86fd315eb74758.mockapi.io/descriptions')
+let descriptionApi = fetch('http://localhost:3000/descriptions')
     .then(response => response.json())
 Promise.all([productApi, categoryApi, brandApi, descriptionApi])
     .then(([dataProduct, dataCategory, dataBrand, dataDescription]) => {
@@ -121,3 +121,50 @@ Promise.all([productApi, categoryApi, brandApi, descriptionApi])
         }
 
     })
+let quantityBtn = document.querySelector('.body__information--quantityBtn input')
+    , plusBtn = document.querySelector('.body__information--quantityBtn .fa-plus')
+    , minusBtn = document.querySelector('.body__information--quantityBtn .fa-minus')
+    , quantityCounter = 1;
+plusBtn.addEventListener('click', () => {
+    quantityCounter++;
+    console.log(quantityCounter)
+    quantityBtn.value = quantityCounter;
+})
+minusBtn.addEventListener('click', () => {
+    quantityCounter--
+    quantityBtn.value = quantityCounter;
+    if (quantityCounter < 1) {
+        quantityCounter = 1;
+        quantityBtn.value = quantityCounter;
+    }
+})
+// Cart
+function disable() {
+    // To get the scroll position of current webpage
+    TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+    LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+
+        // if scroll happens, set it to the previous value
+        window.onscroll = function () {
+            window.scrollTo(LeftScroll, TopScroll);
+        };
+}
+
+function enable() {
+    window.onscroll = function () { };
+}
+// Cart
+let cartContainer = document.querySelector('.cart-container')
+let shoppingCartOpen = () => {
+    cartContainer.style.display = `flex`
+    disable();
+}
+let shoppingCartClose = () => {
+    cartContainer.style.display = `none`;
+    enable();
+}
+// Cart Btn
+let cartBtn = document.querySelector('.body__information--cartBtn');
+cartBtn.addEventListener('click',()=>{
+            
+})

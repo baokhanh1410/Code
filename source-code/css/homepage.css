@@ -14,9 +14,8 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: space-between;
-    transform: translateX(100%);
 }
 
 .cart-whitespace {
@@ -1872,14 +1871,14 @@ footer .max-width {
     border-radius: 15px;
     width: 80%;
     height: 450px;
-    /* transform: scale(0.95); */
+    transform: scale(0.95);
     transition: var(--transition-all);
     cursor: pointer;
 }
 
-/* .swiper--box:hover {
+.swiper--box:hover {
     transform: scale(1);
-} */
+}
 
 .swiper--maxWidth {
     width: 80%;
@@ -1961,4 +1960,10 @@ footer .max-width {
     width: 15%;
     height: 40px;
     margin-bottom: 40px;
+    cursor: pointer;
+    transition: var(--transition-all);
+}
+
+.swiper--title:hover {
+    background-color: var(--light-black-color);
 }

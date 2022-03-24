@@ -77,17 +77,18 @@
 }
 
 /* Shopping cart style */
+/* Shopping cart style */
 .cart-container {
     width: 100%;
     height: 100%;
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: space-between;
 }
 
 .cart-whitespace {
     width: 80%;
-    display: none;
+    display: block;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -97,7 +98,7 @@
     height: 100%;
     position: relative;
     z-index: 1000;
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
@@ -134,7 +135,7 @@
     font-size: 20px;
     color: var(--blue-color);
     cursor: pointer;
-    transition: all ease 0.3s;
+    transition: var(--transition-all);
 }
 
 .shopping-cart__header i:hover {
@@ -209,7 +210,7 @@
 
 .shopping-cart__section i {
     color: var(--black-color);
-    transition: all ease 0.3s;
+    transition: var(--transition-all);
     cursor: pointer;
     height: 100%;
 }
@@ -246,7 +247,7 @@
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
     margin: 10px 0px;
-    transition: all ease 0.3s;
+    transition: var(--transition-all);
     cursor: pointer;
 }
 

@@ -23,7 +23,7 @@
 <body id="body">
     <div>
         <!-- Shopping cart -->
-        <!-- <div class="cart-container">
+        <div class="cart-container">
             <div class="cart-whitespace" onclick="shoppingCartClose()"></div>
             <div class="shopping-cart">
                 <div class="shopping-cart__container">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- HTML Header -->
         <header>
             <div class="header__top">
@@ -98,14 +98,14 @@
                                             <ul class="nav--dropdown--section">
                                                 <div class="nav--dropdown--content">
                                                     <p>Shop Page</p>
-                                                    <a href="#">
+                                                    <a href="../html/404.html">
                                                         <li>404 Page</li>
                                                     </a>
-                                                    <a href="#">
-                                                        <li>Product Page</li>
+                                                    <a href="../html/products.html">
+                                                        <li>Products Page</li>
                                                     </a>
-                                                    <a href="#">
-                                                        <li>Cart Page</li>
+                                                    <a href="../html/product-detail.html">
+                                                        <li>Product Detail Page</li>
                                                     </a>
                                                     <a href="#">
                                                         <li>Coming Soon</li>
@@ -170,7 +170,7 @@
                                                 <div class="nav--dropdown--content">
                                                     <p>Laptops & PCs</p>
                                                     <a href="#">
-                                                        <li>All Laptops & PCs</li>
+                                                        <li>Laptops & PCs</li>
                                                     </a>
                                                     <a href="#">
                                                         <li>Laptops</li>
@@ -187,7 +187,7 @@
                                                 <div class="nav--dropdown--content">
                                                     <p>Phones & Tablets</p>
                                                     <a href="#">
-                                                        <li>All Phones & Tablets</li>
+                                                        <li>Phones & Tablets</li>
                                                     </a>
                                                     <a href="#">
                                                         <li>Phones</li>
@@ -204,7 +204,7 @@
                                                 <div class="nav--dropdown--content">
                                                     <p>Monitors & Speakers</p>
                                                     <a href="#">
-                                                        <li>All Monitors & Speakers</li>
+                                                        <li>Monitors & Speakers</li>
                                                     </a>
                                                     <a href="#">
                                                         <li>Monitors</li>
@@ -276,7 +276,7 @@
                                     </div>
                                 </div>
                                 <div class="body__slider--btn">
-                                    <a href="../html/products.html">
+                                    <a href="../html/products.html?s=">
                                         <button>shop all device</button>
                                     </a>
                                 </div>
@@ -432,8 +432,14 @@
             </div>
             <div class="body__swiper" id="apple">
                 <div class="max-width">
-                    <div class="swiper--title">
+                    <div class="swiper--title" onclick="moveToApple()">
                         Apple
+                    </div>
+                    <div class="loading__container">
+                        <div class="loading"></div>
+                        <div class="loading--text">
+                            <p>Loading Data</p>
+                        </div>
                     </div>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -443,8 +449,14 @@
             </div>
             <div class="body__swiper" id="samsung">
                 <div class="max-width">
-                    <div class="swiper--title">
+                    <div class="swiper--title" onclick="moveToSamsung()">
                         Samsung
+                    </div>
+                    <div class="loading__container">
+                        <div class="loading"></div>
+                        <div class="loading--text">
+                            <p>Loading Data</p>
+                        </div>
                     </div>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -454,8 +466,14 @@
             </div>
             <div class="body__swiper" id="gigabyte">
                 <div class="max-width">
-                    <div class="swiper--title">
+                    <div class="swiper--title" onclick="moveToGigabyte()">
                         Gigabyte
+                    </div>
+                    <div class="loading__container">
+                        <div class="loading"></div>
+                        <div class="loading--text">
+                            <p>Loading Data</p>
+                        </div>
                     </div>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">

@@ -1,4 +1,4 @@
-fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
+fetch("http://localhost:3000/products")
   .then((response) => response.json())
   // b1: parse dữ liệu từ json -> js data type (database)
   // return dữ liệu Promise, trong promise đó thì nó đã resolve cái database
@@ -164,7 +164,7 @@ fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
         for (let j = 0; j < allBodyProductsLength; j++) {
           // if(allBodyProductsName[j])
           if (allBodyProductsName[j].innerText === productsArr[i].product_name) {
-            allBodyProducts[j].href = `../html/product-detail.html?${productsArr[i].id}`
+            allBodyProducts[j].href = `../html/product-detail.html?id=${productsArr[i].id}`
           }
         }
       }
@@ -633,4 +633,51 @@ fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
         }
       }
     }
-  }); 
+    let allSwiperBoxes = document.querySelectorAll(".swiper-slide")
+      , swiperLength = allSwiperBoxes.length
+      , allSwiperNames = document.querySelectorAll('.swiper--name')
+    for (let i in productsArr) {
+      for (let j = 0; j < swiperLength; j++) {
+        if (allSwiperNames[j].innerText === productsArr[i].product_name) {
+          allSwiperBoxes[j].addEventListener('click', () => {
+            location.href = `../html/product-detail.html?id=${data[i].id}`
+          })
+        }
+      }
+    }
+  });
+// Cart
+function disable() {
+  // To get the scroll position of current webpage
+  TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+  LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+
+    // if scroll happens, set it to the previous value
+    window.onscroll = function () {
+      window.scrollTo(LeftScroll, TopScroll);
+    };
+}
+
+function enable() {
+  window.onscroll = function () { };
+}
+// Cart
+let cartContainer = document.querySelector('.cart-container')
+let shoppingCartOpen = () => {
+  cartContainer.style.display = `flex`
+  disable();
+}
+let shoppingCartClose = () => {
+  cartContainer.style.display = `none`;
+  enable();
+}
+// Brands
+let moveToApple = () => {
+  location.href = `../html/products.html?s=Apple`
+}
+let moveToSamsung = () => {
+  location.href = `../html/products.html?s=Samsung`
+}
+let moveToGigabyte = () => {
+  location.href = `../html/products.html?s=Gigabyte`
+}

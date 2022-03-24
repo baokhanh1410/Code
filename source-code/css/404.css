@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-black-color);
+}
+h1 {
+    font-size: 120px;
+    font-weight: bold;
+    color: var(--blue-color);
+}
+p {
+    font-size: 54px;
+    color: var(--blue-color);
+}
+a {
+    font-size: 36px;
+    color: var(--blue-color);
+    transition: var(--transition-all);
+}
+a:hover {
+    color: var(--font-color);
+}
