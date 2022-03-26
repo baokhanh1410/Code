@@ -646,10 +646,11 @@ fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
       }
     }
     // Body Section
-    var countDownDate = new Date("March 28, 2022 20:59:59").getTime();
+    var bigCountDownDate = new Date("March 28, 2022 19:59:59").getTime()
+      , smallCountDownDate = new Date("March 30, 2022 20:59:59").getTime()
     var x = setInterval(function () {
       var now = new Date().getTime();
-      var distance = countDownDate - now;
+      var distance = smallCountDownDate - now;
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -664,7 +665,7 @@ fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
     }, 1000);
     var x = setInterval(function () {
       var now = new Date().getTime();
-      var distance = countDownDate - now;
+      var distance = bigCountDownDate - now;
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
