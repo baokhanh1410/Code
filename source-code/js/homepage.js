@@ -30,11 +30,8 @@ fetch("http://localhost:3000/products")
           }
         };
         discountPriceComma();
-        if (
-          productsArr[i].newArrivals === "true" &&
-          productsArr[i].discount === "false"
-        ) {
-          bodyProductsRow.innerHTML += `<a class="body__products--box" href="">
+        if (productsArr[i].newArrivals === "true" && productsArr[i].discount === "false") {
+          bodyProductsRow.innerHTML += `<div class="body__products--box" href="">
                                     <div class="body__products--max-width">
                                         <span class="body__products--tag">
                                         <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
@@ -60,12 +57,9 @@ fetch("http://localhost:3000/products")
                                                     class="fa-solid fa-code-compare"></i></div>
                                         </div>
                                     </div>
-                                </a>`;
-        } else if (
-          productsArr[i].newArrivals === "true" &&
-          productsArr[i].discount === "true"
-        ) {
-          bodyProductsRow.innerHTML += `<a class="body__products--box" href="">
+                                </div>`;
+        } else if (productsArr[i].newArrivals === "true" && productsArr[i].discount === "true") {
+          bodyProductsRow.innerHTML += `<div class="body__products--box" href="">
                                     <div class="body__products--max-width">
                                         <span class="body__products--tag">
                                         <div class="body__products--tag--style tag--new-arrival">${productsArr[i].newArrivals_content}</div>
@@ -94,18 +88,24 @@ fetch("http://localhost:3000/products")
                                                     class="fa-solid fa-code-compare"></i></div>
                                         </div>
                                     </div>
-                                </a>`;
+                                </div>`;
         }
       }
       // Move to Single Product
       let allBodyProducts = document.querySelectorAll('.body__products--box')
         , allBodyProductsLength = allBodyProducts.length
         , allBodyProductsName = document.querySelectorAll('.body__products--name')
+        , allBodyProductsPicture = document.querySelectorAll('.body__products--picture')
       for (let i in productsArr) {
         for (let j = 0; j < allBodyProductsLength; j++) {
-          // if(allBodyProductsName[j])
           if (allBodyProductsName[j].innerText === productsArr[i].product_name) {
-            allBodyProducts[j].href = `../html/product-detail.html?id=${productsArr[i].id}`
+            // allBodyProducts[j].href = `../html/product-detail.html?id=${productsArr[i].id}`
+            allBodyProductsName[j].addEventListener('click', () => {
+              location.href = `../html/product-detail.html?id=${productsArr[i].id}`
+            })
+            allBodyProductsPicture[j].addEventListener('click', () => {
+              location.href = `../html/product-detail.html?id=${productsArr[i].id}`
+            })
           }
         }
       }
@@ -645,32 +645,62 @@ fetch("http://localhost:3000/products")
         }
       }
     }
+    // Body Section
+    var countDownDate = new Date("March 28, 2022 20:59:59").getTime();
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      let smallTimer = document.querySelectorAll('.body__featured--small--timer')
+        , smallTimerLength = smallTimer.length;
+      for (let i = 0; i < smallTimerLength; i++) {
+        smallTimer[i].innerHTML = `
+        <p>end in:</p>
+        ${hours} : ${minutes} : ${seconds}
+        `
+      }
+    }, 1000);
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      let bigTimer = document.querySelector('.body__featured--sale')
+      bigTimer.innerHTML = `<div class="body__featured--circle">
+      <div class="body__featured--sale--circle">
+          <div class="body__featured--circle--content">
+              <p>${hours}</p>
+          </div>
+      </div>
+      <div class="body__featured--circle--text">
+          <p>hrs</p>
+      </div>
+  </div>
+  <div class="body__featured--circle">
+      <div class="body__featured--sale--circle">
+          <div class="body__featured--circle--content">
+              <p>${minutes}</p>
+          </div>
+      </div>
+      <div class="body__featured--circle--text">
+          <p>min</p>
+      </div>
+  </div>
+  <div class="body__featured--circle">
+      <div class="body__featured--sale--circle">
+          <div class="body__featured--circle--content">
+              <p>${seconds}</p>
+          </div>
+      </div>
+      <div class="body__featured--circle--text">
+          <p>sec</p>
+      </div>
+  </div>`
+    }, 1000);
   });
-// Cart
-function disable() {
-  // To get the scroll position of current webpage
-  TopScroll = window.pageYOffset || document.documentElement.scrollTop;
-  LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
-
-    // if scroll happens, set it to the previous value
-    window.onscroll = function () {
-      window.scrollTo(LeftScroll, TopScroll);
-    };
-}
-
-function enable() {
-  window.onscroll = function () { };
-}
-// Cart
-let cartContainer = document.querySelector('.cart-container')
-let shoppingCartOpen = () => {
-  cartContainer.style.display = `flex`
-  disable();
-}
-let shoppingCartClose = () => {
-  cartContainer.style.display = `none`;
-  enable();
-}
 // Brands
 let moveToApple = () => {
   location.href = `../html/products.html?s=Apple`

@@ -494,39 +494,12 @@ fetch("http://localhost:3000/products")
       }
     }
   })
-// Cart
-function disable() {
-  // To get the scroll position of current webpage
-  TopScroll = window.pageYOffset || document.documentElement.scrollTop;
-  LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
-
-    // if scroll happens, set it to the previous value
-    window.onscroll = function () {
-      window.scrollTo(LeftScroll, TopScroll);
-    };
-}
-
-function enable() {
-  window.onscroll = function () { };
-}
-// Cart
-let cartContainer = document.querySelector('.cart-container')
-let shoppingCartOpen = () => {
-  cartContainer.style.display = `flex`
-  disable();
-}
-let shoppingCartClose = () => {
-  cartContainer.style.display = `none`;
-  enable();
-}
-
 // Xử lí lại với API
 Promise.all([productsApi, brandsApi, categoriesApi])
   .then(([products, brands, categories]) => {
-
     for (let i in products) {
       for (let j in categories) {
-        for (let k = 1; k < 4; k++) {
+        for (let k = 0; k < 3; k++) {
           if (products[i].cat_id === categories[j].cat_id && categories[j].cat_list[k] === searchValue) {
             let bodyBox = () => {
               let discountPrice = ((Number(products[i].product_price.replaceAll(",", "")) / 100) * Number(products[i].discount_content_number)).toFixed();

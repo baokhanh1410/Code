@@ -33,7 +33,6 @@ navChangeClass();
 // Get query string value
 const productUrl = new URLSearchParams(window.location.search)
     , productParams = Object.fromEntries(productUrl.entries());
-console.log(productUrl.getAll(''))
 let productParam = Object.keys(productParams)[0];
 for (param of productUrl) {
     productParam = param[1];
@@ -49,7 +48,7 @@ let descriptionApi = fetch('http://localhost:3000/descriptions')
     .then(response => response.json())
 Promise.all([productApi, categoryApi, brandApi, descriptionApi])
     .then(([dataProduct, dataCategory, dataBrand, dataDescription]) => {
-        // Render Products Speccification
+        // Render Products Specification
         let picture = document.querySelector('.body__bigPicture')
             , name = document.querySelector('.body__information--name')
             , price = document.querySelector('.body__information--priceContainer')
@@ -116,6 +115,12 @@ Promise.all([productApi, categoryApi, brandApi, descriptionApi])
                         smallDescription.innerHTML = `${dataDescription[j].description}`
                     }
                 }
+                // Cart Btn
+                let cartBtn = document.querySelector('.body__information--cartBtn');
+                cartBtn.addEventListener('click', () => {
+                    alert('Successfully added to shopping cart!')
+                    localStorage.setItem(`${dataProduct[i].id}`, `${dataProduct[i].id}`)
+                })
             }
 
         }
@@ -127,7 +132,6 @@ let quantityBtn = document.querySelector('.body__information--quantityBtn input'
     , quantityCounter = 1;
 plusBtn.addEventListener('click', () => {
     quantityCounter++;
-    console.log(quantityCounter)
     quantityBtn.value = quantityCounter;
 })
 minusBtn.addEventListener('click', () => {
@@ -137,34 +141,4 @@ minusBtn.addEventListener('click', () => {
         quantityCounter = 1;
         quantityBtn.value = quantityCounter;
     }
-})
-// Cart
-function disable() {
-    // To get the scroll position of current webpage
-    TopScroll = window.pageYOffset || document.documentElement.scrollTop;
-    LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
-
-        // if scroll happens, set it to the previous value
-        window.onscroll = function () {
-            window.scrollTo(LeftScroll, TopScroll);
-        };
-}
-
-function enable() {
-    window.onscroll = function () { };
-}
-// Cart
-let cartContainer = document.querySelector('.cart-container')
-let shoppingCartOpen = () => {
-    cartContainer.style.display = `flex`
-    disable();
-}
-let shoppingCartClose = () => {
-    cartContainer.style.display = `none`;
-    enable();
-}
-// Cart Btn
-let cartBtn = document.querySelector('.body__information--cartBtn');
-cartBtn.addEventListener('click',()=>{
- console.log(true)
 })

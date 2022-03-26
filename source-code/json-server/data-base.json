@@ -149,7 +149,7 @@
             "discount": "false",
             "discount_content": "",
             "discount_content_number": "100",
-            "cat_id": "phonestablets",
+            "cat_id": "headphones",
             "brand_id": "apple"
         },
         {
@@ -168,7 +168,7 @@
             "discount": "true",
             "discount_content": "20%",
             "discount_content_number": "80",
-            "cat_id": "phonestablets",
+            "cat_id": "headphones",
             "brand_id": "apple"
         },
         {
@@ -187,7 +187,7 @@
             "discount": "true",
             "discount_content": "25%",
             "discount_content_number": "75",
-            "cat_id": "phonestablets",
+            "cat_id": "headphones",
             "brand_id": "apple"
         },
         {
@@ -206,7 +206,7 @@
             "discount": "false",
             "discount_content": "",
             "discount_content_number": "100",
-            "cat_id": "phonestablets",
+            "cat_id": "headphones",
             "brand_id": "apple"
         },
         {
@@ -840,9 +840,7 @@
             "cat_name": "Laptops & PCs",
             "cat_list": [
                 "Laptops & PCs",
-                "Laptops",
-                "PCs",
-                "High-end Laptops & PCs"
+                "Laptops"
             ]
         },
         {
@@ -851,8 +849,7 @@
             "cat_list": [
                 "Phones  & Tablets",
                 "Phones",
-                "Tablets",
-                "High-end Phones & Tablets"
+                "Tablets"
             ]
         },
         {
@@ -861,8 +858,7 @@
             "cat_list": [
                 "Monitors & Speakers",
                 "Monitors",
-                "Speakers",
-                "High-end Monitors & Speakers"
+                "Speakers"
             ]
         },
         {
@@ -870,6 +866,13 @@
             "cat_name": "Watches",
             "cat_list": [
                 "Watches"
+            ]
+        },
+        {
+            "cat_id": "headphones",
+            "cat_name": "Headphones",
+            "cat_list": [
+                "Headphones"
             ]
         }
     ],
