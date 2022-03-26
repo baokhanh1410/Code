@@ -209,7 +209,7 @@ fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
       discountProductsArr.splice(-1, discountProductsArrLength - 3);
     }
     bodyFeaturedBigSectionContainer.innerHTML = `
-                            <div class="body__featured--big-section" >
+                            <div class="body__featured--big-section">
                                 <div class="body__featured--text">
                                     <h2>${discountProductsArr[0].product_name}</h2>
                                     <div class="body__featured--price--container">
@@ -369,6 +369,18 @@ fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
             </div>
         </div>
  `;
+    let bodyBigSection = document.querySelector('.body__featured--big-section')
+      , bodySmallSection = document.querySelectorAll('.body__featured--small--section')
+      , bodySmallSectionLength = bodySmallSection.length;
+    bodyBigSection.addEventListener('click', () => {
+      location.href = `../../source-code/html/product-detail.html?id=appleairpods3`
+    })
+    bodySmallSection[0].addEventListener('click', () => {
+      location.href = `../../source-code/html/product-detail.html?id=appleairpodspro`
+    })
+    bodySmallSection[1].addEventListener('click', () => {
+      location.href = `../../source-code/html/product-detail.html?id=appleipadpro12.9wifi`
+    })
     // Render Products Apple
     let bodyAppleSwiper = document.querySelector('#apple .swiper-wrapper');
     for (let i in productsArr) {
