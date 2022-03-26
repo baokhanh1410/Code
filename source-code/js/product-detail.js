@@ -38,13 +38,13 @@ for (param of productUrl) {
     productParam = param[1];
 };
 // Call Api
-let productApi = fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
+let productApi = fetch("http://localhost:3000/products")
     .then(response => response.json())
-let categoryApi = fetch('https://622ee3905c86fd315eb74758.mockapi.io/categories')
+let categoryApi = fetch('http://localhost:3000/categories')
     .then(response => response.json())
-let brandApi = fetch('https://622ee3905c86fd315eb74758.mockapi.io/brands')
+let brandApi = fetch('http://localhost:3000/brands')
     .then(response => response.json())
-let descriptionApi = fetch('https://622ee3905c86fd315eb74758.mockapi.io/descriptions')
+let descriptionApi = fetch('http://localhost:3000/descriptions')
     .then(response => response.json())
 Promise.all([productApi, categoryApi, brandApi, descriptionApi])
     .then(([dataProduct, dataCategory, dataBrand, dataDescription]) => {

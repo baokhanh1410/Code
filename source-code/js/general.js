@@ -51,9 +51,9 @@ searchForm.addEventListener("submit", (event) => {
     location.href = `./products.html?s=${searchValue}`
 })
 // Xử lí lại với api
-let productsApi = fetch("https://622ee3905c86fd315eb74758.mockapi.io/products").then(response => response.json())
-    , brandsApi = fetch("https://622ee3905c86fd315eb74758.mockapi.io/brands").then(response => response.json())
-    , categoriesApi = fetch("https://622ee3905c86fd315eb74758.mockapi.io/categories").then(response => response.json())
+let productsApi = fetch("http://localhost:3000/products").then(response => response.json())
+    , brandsApi = fetch("http://localhost:3000/brands").then(response => response.json())
+    , categoriesApi = fetch("http://localhost:3000/categories").then(response => response.json())
 Promise.all([productsApi, brandsApi, categoriesApi])
     .then(([products, brands, categories]) => {
         // Categories Search

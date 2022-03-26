@@ -1,4 +1,4 @@
-fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
+fetch("http://localhost:3000/products")
   .then((response) => response.json())
   // b1: parse dữ liệu từ json -> js data type (database)
   // return dữ liệu Promise, trong promise đó thì nó đã resolve cái database
