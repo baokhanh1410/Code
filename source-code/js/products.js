@@ -13,7 +13,7 @@
     stickyNavbar();
   };
 }
-fetch("http://localhost:3000/products")
+fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
   .then((response) => response.json())
   .then((data) => {
     let loading = document.querySelectorAll(".loading__container");
@@ -36,7 +36,7 @@ let bodyBoxContainer = document.querySelector('.body__content--boxContainer');
 let bodyRowContainer = document.querySelector(".body__content--rowContainer");
 let noResult = document.querySelector('.empty__container')
 // Call API 
-fetch("http://localhost:3000/products")
+fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
   .then(response => response.json())
   .then((data) => {
     for (let i in data) {
