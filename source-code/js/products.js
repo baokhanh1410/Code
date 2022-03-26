@@ -437,7 +437,7 @@ fetch("https://622ee3905c86fd315eb74758.mockapi.io/products")
           }
         };
         bodyRow()
-        fetch("http://localhost:3000/descriptions")
+        fetch("https://622ee3905c86fd315eb74758.mockapi.io/descriptions")
           .then(response => response.json())
           .then((dataDescription) => {
             let productDescription = document.querySelectorAll('.body__content--description')
